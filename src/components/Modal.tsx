@@ -6,7 +6,6 @@ export const Modal = ({ handleClose }: { handleClose: () => void }) => {
     <Backdrop onClick={handleClose}>
       <motion.div
         onClick={(e) => e.stopPropagation()}
-        drag
         className="w-[700px] min-w-[50%] max-w-[90%] m-auto p-4 rounded-xl flex flex-col items-center justify-center bg-orange-500 gap-4"
         initial={{ y: "-100vh", opacity: 0 }}
         animate={{
